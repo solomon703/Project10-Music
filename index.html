@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player | With love and passionate</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./images/title.jpeg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/9eba3445aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+<nav>
+  <div class="circle" onclick="kalki()">
+    <i>Kalki</i>
+  </div>
+  <div class="circle" onclick="akashan()">
+    <i >Akasham</i>
+  </div>
+</nav>
+<img src="./images/urike-thumbnail.jpeg" alt="" class="song-img" id="image">
+<h1>All Love Songs</h1>
+<p>Indian | Music Director's</p>
+<audio id="song">
+  <source src="./audio/Urike Urike.mp3" type="audio/mpeg">
+</audio>
+<audio id="song1">
+  <source src="./audio/Ye Kannulu Choodani - SenSongsMp3.Com.mp3" type="audio/mpeg">
+</audio>
+<audio id="song2">
+  <source src="./audio/Theme of Kalki.mp3" type="audio/mpeg">
+</audio>
+<audio id="song3">
+  <source src="./audio/Nammavemo-SenSongsMp3.Com.mp3" type="audio/mpeg">
+</audio>
+<audio id="song4">
+  <source src="./audio/Neeli Neeli Aakasam - SenSongsMp3.Co.mp3" type="audio/mpeg">
+</audio>
+<!-- <audio id="song5">
+  <source src="./audio/Theme of Kalki.mp3" type="audio/mpeg">
+</audio> -->
+<input type="range" value="0" id="progress">
+<div class="controls">
+  <div onclick="parugu()" id="ctrl2"><i class="fa-solid fa-backward"></i></div>
+  <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+  <div onclick="next()" id="ctrl1"><i class="fa-solid fa-forward"></i></div>
+</div>
+    </div>
+  </div>
+
+
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>
